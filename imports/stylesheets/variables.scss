@@ -1,0 +1,39 @@
+$white:    #fff;
+$gray-100: darken(white, 2%);
+$gray-200: darken(white, 5%);
+$gray-300: darken(white, 11%);
+$gray-400: darken(white, 19%);
+$gray-500: darken(white, 29%);
+$gray-600: darken(white, 41%);
+$gray-700: darken(white, 55%);
+$gray-800: darken(white, 69%);
+$gray-900: darken(white, 84%);
+$black:    #000;
+
+$indigo:  #50196D;
+$purple:  #874BA6;
+$blue:    #6754AB;
+$teal:    #165665;
+$cyan:    #438A9A;
+$green:   #94DD5D;
+$yellow:  #F9DF69;
+$orange:  #F98B69;
+$pink:    #E05E83;
+$red:     #931F40;
+
+$primary:       $pink;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+$body-bg: $dark;
+$body-color: $light;
+
+$headings-font-weight: 200;
+$headings-font-family: 'Raleway', sans-serif;
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-family-monospace: 'Source Code Pro', monospace;

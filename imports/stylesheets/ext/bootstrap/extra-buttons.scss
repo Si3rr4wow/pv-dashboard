@@ -1,0 +1,88 @@
+.btn-light {
+  font-weight: $font-weight-normal;
+  color: $dark;
+  text-decoration: none;
+
+  &:hover,
+  &.hover {
+    background-color: $gray-200;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+    pointer-events: none;
+  }
+}
+
+.btn-dark {
+  font-weight: $font-weight-normal;
+  color: $light;
+  text-decoration: none;
+
+  &:hover,
+  &.hover {
+    background-color: $gray-700;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+    pointer-events: none;
+  }
+}
+
+.btn-blue {
+  font-weight: $font-weight-normal;
+  background-color: $blue;
+  color: $white;
+  text-decoration: none;
+
+  &:hover,
+  &.hover {
+    background-color: darken($blue, 10%);
+    color: $white;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $white;
+    pointer-events: none;
+  }
+}
+
+.btn-orange {
+  font-weight: $font-weight-normal;
+  background-color: $orange;
+  color: $white;
+  text-decoration: none;
+
+  &:hover,
+  &.hover {
+    background-color: darken($orange, 10%);
+    color: $white;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $white;
+    pointer-events: none;
+  }
+}
+
+.btn-unavailable {
+  font-weight: $font-weight-normal;
+  background: $day-background;
+  text-decoration: none;
+
+  &:hover,
+  &.hover {
+    background: repeating-linear-gradient(45deg, $gray-300, $gray-300 10px, $gray-100 0px, $gray-100 15px);
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+    pointer-events: none;
+  }
+}

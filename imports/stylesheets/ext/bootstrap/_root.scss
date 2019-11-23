@@ -1,0 +1,18 @@
+:root {
+  --body-bg: #{$body-bg};
+  --body-color: #{$body-color};
+
+  @each $color, $value in $grays {
+    --gray-#{$color}: #{$value};
+  }
+
+  @each $spacer, $value in $spacers {
+    --spacer-#{$spacer}: #{$value};
+  }
+
+  --border-width: #{$border-width};
+  --border-color: #{$border-color};
+  --border-radius: #{$border-radius};
+  --border-radius-lg: #{$border-radius-lg};
+  --border-radius-sm: #{$border-radius-sm};
+}

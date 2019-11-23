@@ -1,0 +1,29 @@
+// Presets
+@import 'ext/bootstrap/variables';
+
+// Vendor
+@import 'vendor/bootstrap/bootstrap';
+//
+@import 'ext/bootstrap/root';
+
+// Components
+
+//for testing giftcard preview
+#react-target {
+  // height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    flex-shrink: 0;
+  }
+
+  main {
+    flex-grow: 1;
+    min-height: 0;
+  }
+
+  footer {
+    flex-shrink: 0;
+  }
+}

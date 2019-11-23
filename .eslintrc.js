@@ -53,7 +53,6 @@ module.exports = {
     'prefer-destructuring': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
-    "react/prop-types": 0,
     'yoda': 'error'
   },
 };

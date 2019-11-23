@@ -1,8 +1,7 @@
 {
-  "presets": ["next/babel"],
+  "presets": ["babel"],
   "plugins": [
     "emotion",
     ["@babel/plugin-proposal-optional-chaining", { "loose": false }],
-    "babel-plugin-root-import"
   ]
 }

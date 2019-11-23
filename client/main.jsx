@@ -1,8 +1,16 @@
 import React from 'react';
-import { Meteor } from 'meteor/meteor';
-import { render } from 'react-dom';
-import App from '/imports/ui/App'
+import { hydrate } from 'react-dom';
+import { Reload } from 'meteor/reload';
+import { onPageLoad } from 'meteor/server-render';
 
-Meteor.startup(() => {
-  render(<App />, document.getElementById('react-target'));
+import createStore from '/imports/redux/store';
+import App from '/imports/ui/app'
+
+// Disable refresh upon deploy
+Reload._onMigrate(function () { return [false]; });
+
+onPageLoad(() => {
+  const { store, history } = createStore();
+
+  hydrate(<App store={store} history={history} />, document.getElementById('react-target'));
 });

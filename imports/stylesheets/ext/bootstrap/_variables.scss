@@ -10,20 +10,6 @@ $gray-800: darken(white, 70%) ;
 $gray-900: darken(white, 85%) ;
 $black:    #000 ;
 
-$light: $gray-100 ;
-$dark: $gray-800;
-
-$body-bg: $light;
-$card-border-radius: 1rem;
-$yiq-contrasted-threshold: 170;
-$navbar-padding-y: .25rem;
-$list-group-action-color: $gray-800;
-
-$thumbnail-padding: 0;
-$thumbnail-border-width: 2px;
-$thumbnail-border-color: $light;
-$thumbnail-border-radius: 50%;
-
 $red:     #f34849 ;
 $orange:  #f3ae48 ;
 $yellow:  #f5d900 ;
@@ -35,7 +21,26 @@ $indigo:  #6a48f3 ;
 $purple:  #d248f3 ;
 $pink:    #f348b0 ;
 
-$primary: #eea011;
-$secondary: #dc1079;
+$primary: $blue;
+$secondary: $gray-600;
 $info: darken($cyan, 20%);
 $success: darken($green, 15%);
+$danger: darken($red, 15%);
+$warning: $yellow;
+$light: $gray-100 ;
+$dark: $gray-800;
+
+$body-bg: $dark;
+$body-color: $light;
+$card-border-radius: 1rem;
+$yiq-contrasted-threshold: 170;
+$navbar-padding-y: .25rem;
+$list-group-action-color: $gray-800;
+
+$card-bg: $dark;
+$card-border-color: $blue;
+
+$thumbnail-padding: 0;
+$thumbnail-border-width: 2px;
+$thumbnail-border-color: $light;
+$thumbnail-border-radius: 50%;

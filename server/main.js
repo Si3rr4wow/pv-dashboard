@@ -1,4 +1,5 @@
 import { Meteor } from 'meteor/meteor';
-import './register-apis'
+import './register'
+import './mongoose'
 
 Meteor.startup(() => {});

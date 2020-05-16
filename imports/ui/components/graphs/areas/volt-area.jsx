@@ -10,7 +10,7 @@ import useVolts from '/imports/ui/subscriptions/use-volts'
 import useTime from '/imports/ui/hooks/use-time'
 
 const Graphs = () => {
-  const time = useTime(1000)
+  const time = useTime(10000)
 
   const selector = useMemo(() => {
     return {
@@ -39,6 +39,10 @@ const Graphs = () => {
   }, [voltChangeIndicator])
 
   if(voltsLoading && graphableVolts.length < 2) { return <Spinner/> }
+
+  if(graphableVolts.length < 2) {
+    return <div>No data to show</div>
+  }
 
   return (
     <Chart

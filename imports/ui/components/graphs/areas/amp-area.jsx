@@ -10,7 +10,7 @@ import useAmps from '/imports/ui/subscriptions/use-amps'
 import useTime from '/imports/ui/hooks/use-time'
 
 const Graphs = () => {
-  const time = useTime(1000)
+  const time = useTime(10000)
 
   const selector = useMemo(() => {
     return {
@@ -38,7 +38,11 @@ const Graphs = () => {
     return [['Time', 'Amps'], ...ampData]
   }, [ampChangeIndicator])
 
-  if(ampsLoading && graphableAmps.length < 2) { return <Spinner/> }
+  if((ampsLoading && graphableAmps.length < 2)) { return <Spinner/> }
+
+  if(graphableAmps.length < 2) {
+    return <div>No data to show</div>
+  }
 
   return (
     <Chart

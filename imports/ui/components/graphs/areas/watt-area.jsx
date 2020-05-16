@@ -30,7 +30,7 @@ const findNearestAmp = (voltTime, amps) => {
   }
 }
 const Graphs = () => {
-  const time = useTime(1000)
+  const time = useTime(10000)
 
   const selector = useMemo(() => {
     return {
@@ -65,6 +65,10 @@ const Graphs = () => {
   }, [voltChangeIndicator, ampChangeIndicator])
 
   if((ampsLoading || voltsLoading) && graphableWatts.length < 2) { return <Spinner/> }
+
+  if(graphableWatts.length < 2) {
+    return <div>No data to show</div>
+  }
 
   return (
     <Chart

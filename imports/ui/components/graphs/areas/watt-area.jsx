@@ -54,10 +54,8 @@ const Graphs = () => {
   const ampChangeIndicator = amps.reduce((acc, { _id }) => acc + _id._str, '')
 
   const graphableWatts = useMemo(() => {
-    console.log(amps)
     const voltData = volts.map(dataPoint => {
       const nearestAmp = findNearestAmp(dataPoint.createdAt.getTime(), amps)
-      console.log('NEARESTAMP', nearestAmp)
       return [
         moment(dataPoint.createdAt).format('HH:mm'),
         dataPoint.value * nearestAmp.value || 0

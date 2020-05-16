@@ -1,11 +1,11 @@
+import { Meteor } from 'meteor/meteor'
 import { useTracker } from 'meteor/react-meteor-data';
-import subManager from './sub-manager';
 
 import Amps from '/imports/api/meteor-models/amps';
 
 const useAmps = (selector, options) => {
   const ampsLoading = useTracker(() => {
-    const handle = subManager.subscribe('amps', selector, options);
+    const handle = Meteor.subscribe('amps', selector, options);
 
     return !handle.ready();
   });

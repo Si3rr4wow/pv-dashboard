@@ -1,1 +1,2 @@
-import '/imports/api/models/datapoint'
+import '/imports/api/models/amp'
+import '/imports/api/models/volt'

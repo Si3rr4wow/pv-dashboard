@@ -21,3 +21,4 @@ server-render
 nimble:restivus
 meteorhacks:subs-manager
 react-meteor-data
+tracker

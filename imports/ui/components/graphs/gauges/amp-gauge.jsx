@@ -3,22 +3,22 @@ import React from 'react'
 import { Spinner } from 'reactstrap'
 import { Chart } from "react-google-charts";
 
-import useDataPoints from '/imports/ui/subscriptions/use-datapoints'
+import useAmps from '/imports/ui/subscriptions/use-amps'
 
 const Graphs = () => {
   const {
-    dataPointsLoading,
-    dataPoints
-  } = useDataPoints({ type: 'amp' }, { sort: { createdAt: -1 }, limit: 1 })
+    ampsLoading,
+    amps
+  } = useAmps({ }, { sort: { createdAt: -1 }, limit: 1 })
 
-  if(dataPointsLoading) { return <Spinner/> }
+  if(ampsLoading) { return <Spinner/> }
 
   return (
     <Chart
       loader={<Spinner/>}
       data={[
         ['Label', 'Value'],
-        ['Amps', dataPoints[0]?.value || 0]
+        ['Amps', amps?.[0]?.value || 0]
       ]}
       chartType="Gauge"/>
   )

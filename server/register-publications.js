@@ -1,1 +1,2 @@
-import '/imports/api/publications/datapoints'
+import '/imports/api/publications/amps'
+import '/imports/api/publications/volts'

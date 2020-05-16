@@ -1,7 +1,7 @@
 import React from 'react'
 
 const About = () => (
-  <div>Meteor, React, SSR and Redux :) (and reactstrap ofc)</div>
+  <div>This site provides readouts of Photovoltaic Panel data from Orchard House.</div>
 )
 
 export default About

@@ -6,6 +6,7 @@
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
+    "@babel/core": "^7.9.6",
     "@babel/plugin-proposal-optional-chaining": "^7.7.4",
     "@babel/runtime": "^7.9.6",
     "@babel/types": "^7.9.6",

@@ -25,7 +25,8 @@ const Graphs = () => {
         ['Label', 'Value'],
         ['Watts', volts?.[0]?.value * amps?.[0]?.value || 0]
       ]}
-      chartType="Gauge"/>
+      chartType="Gauge"
+      max="500"/>
   )
 }
 
